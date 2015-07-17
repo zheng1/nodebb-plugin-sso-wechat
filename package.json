@@ -1,0 +1,34 @@
+{
+  "name": "nodebb-plugin-sso-wechat",
+  "version": "0.1.0",
+  "description": "NodeBB Wechat SSO",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zheng1/nodebb-plugin-sso-wechat"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "wechat",
+    "sso",
+    "single sign on",
+    "registration"
+  ],
+  "author": {
+    "name": "Zhengyi Lai",
+    "email": "laizhyi@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zheng1/nodebb-plugin-sso-wechat/issues"
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "passport-weixin": "0.0.2"
+  },
+  "nbbpm": {
+    "compatibility": "^0.6.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+	"id": "nodebb-plugin-sso-wechat",
+	"name": "NodeBB Wechat SSO",
+	"description": "NodeBB Plugin that allows users to login/register via their Wechat account.",
+	"url": "https://github.com/zheng1/nodebb-plugin-sso-wechat",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "filter:auth.init", "method": "getStrategy" },
+		{ "hook": "filter:user.delete", "method": "deleteUserData" }
+	],
+	"templates": "./templates"
+}
