@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-sso-wechat",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "NodeBB Wechat SSO",
   "main": "library.js",
   "repository": {

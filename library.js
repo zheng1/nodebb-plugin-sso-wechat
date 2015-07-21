@@ -21,13 +21,12 @@ Wechat.getStrategy = function(strategies, callback) {
     requireState: false,
     callbackURL: nconf.get('url') + '/auth/wechat/callback'
   }, function(accessToken, refreshToken, profile, done) {
-    console.log(profile);
-    // Wechat.login(profile.id, profile.displayName, function(err, user) {
-    //   if (err) {
-    //     return done(err);
-    //   }
-    //   done(null, user);
-    // });
+    Wechat.login(profile.id, profile.displayName, function(err, user) {
+      if (err) {
+        return done(err);
+      }
+      done(null, user);
+    });
   }));
 
   strategies.push({
